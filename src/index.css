@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Light theme (default) ── */
+:root {
+  color-scheme: light;
+  --c-ink: #000000;
+  --c-ink-raised: #0C0C0C;
+  --c-ink-secondary: #555555;
+  --c-ink-tertiary: #8A8A8A;
+  --c-primary: #000000;
+  --c-secondary: #5e5e5e;
+  --c-tertiary: #000000;
+  --c-error: #ba1a1a;
+  --c-outline: #7e7576;
+  --c-outline-variant: #cfc4c5;
+
+  --c-background: #f9f9f9;
+  --c-surface: #F6F6F4;
+  --c-paper: #FFFFFF;
+  --c-surface-dim: #dadada;
+  --c-surface-bright: #f9f9f9;
+  --c-surface-variant: #e2e2e2;
+  --c-surface-tint: #5e5e5e;
+  --c-surface-container: #eeeeee;
+  --c-surface-container-low: #f3f3f3;
+  --c-surface-container-lowest: #ffffff;
+  --c-surface-container-high: #e8e8e8;
+  --c-surface-container-highest: #e2e2e2;
+  --c-inverse-surface: #303030;
+  --c-inverse-on-surface: #f1f1f1;
+  --c-inverse-primary: #c6c6c6;
+
+  --c-on-background: #1b1b1b;
+  --c-on-surface: #1b1b1b;
+  --c-on-primary: #ffffff;
+  --c-on-secondary: #ffffff;
+  --c-on-tertiary: #ffffff;
+  --c-on-error: #ffffff;
+  --c-on-surface-variant: #4c4546;
+  --c-on-secondary-container: #646464;
+  --c-on-error-container: #93000a;
+
+  --c-primary-container: #1b1b1b;
+  --c-secondary-container: #e4e2e2;
+  --c-tertiary-container: #1b1b1b;
+  --c-error-container: #ffdad6;
+
+  --c-primary-fixed: #e2e2e2;
+  --c-primary-fixed-dim: #c6c6c6;
+  --c-secondary-fixed: #e4e2e2;
+  --c-secondary-fixed-dim: #c8c6c6;
+  --c-tertiary-fixed: #e2e2e2;
+  --c-tertiary-fixed-dim: #c6c6c6;
+
+  --c-on-primary-fixed: #1b1b1b;
+  --c-on-primary-fixed-variant: #474747;
+  --c-on-secondary-fixed: #1b1c1c;
+  --c-on-secondary-fixed-variant: #464747;
+  --c-on-tertiary-fixed: #1b1b1b;
+  --c-on-tertiary-fixed-variant: #474747;
+  --c-on-primary-container: #848484;
+  --c-on-tertiary-container: #848484;
+
+  --c-status-good: #1E6B46;
+  --c-status-good-tint: #E7F2EC;
+  --c-status-data: #1E4D8A;
+  --c-status-data-tint: #E8EEF7;
+  --c-status-warn: #8A6A30;
+  --c-status-warn-tint: #FDF6EC;
+  --c-status-alert: #A3462E;
+  --c-status-alert-tint: #FDF1EE;
+  --c-live-indicator: #7FC79A;
+
+  --c-primary-tint: #E8E8E8;
+  --c-data-tint: #E8EEF7;
+  --c-good-tint: #E7F2EC;
+  --c-warn-tint: #FDF6EC;
+
+  --scrollbar-thumb: rgba(0,0,0,0.12);
+  --scrollbar-thumb-hover: rgba(0,0,0,0.22);
+}
+
+/* ── Dark theme ── */
+:root.dark {
+  color-scheme: dark;
+  --c-ink: #ffffff;
+  --c-ink-raised: #f0f0f0;
+  --c-ink-secondary: #aaaaaa;
+  --c-ink-tertiary: #777777;
+  --c-primary: #e0e0e0;
+  --c-secondary: #b0b0b0;
+  --c-tertiary: #e0e0e0;
+  --c-error: #ffb4ab;
+  --c-outline: #9c8f90;
+  --c-outline-variant: #4c4344;
+
+  --c-background: #121212;
+  --c-surface: #1a1a1a;
+  --c-paper: #1e1e1e;
+  --c-surface-dim: #141414;
+  --c-surface-bright: #3a3a3a;
+  --c-surface-variant: #4c4344;
+  --c-surface-tint: #c6c6c6;
+  --c-surface-container: #1e1e1e;
+  --c-surface-container-low: #1a1a1a;
+  --c-surface-container-lowest: #0f0f0f;
+  --c-surface-container-high: #282828;
+  --c-surface-container-highest: #333333;
+  --c-inverse-surface: #e6e6e6;
+  --c-inverse-on-surface: #1b1b1b;
+  --c-inverse-primary: #3c3c3c;
+
+  --c-on-background: #e6e1e1;
+  --c-on-surface: #e6e1e1;
+  --c-on-primary: #1b1b1b;
+  --c-on-secondary: #1b1c1c;
+  --c-on-tertiary: #1b1b1b;
+  --c-on-error: #690005;
+  --c-on-surface-variant: #d0c3c4;
+  --c-on-secondary-container: #c6c6c6;
+  --c-on-error-container: #ffb4ab;
+
+  --c-primary-container: #e0e0e0;
+  --c-secondary-container: #4a4546;
+  --c-tertiary-container: #e0e0e0;
+  --c-error-container: #93000a;
+
+  --c-primary-fixed: #e2e2e2;
+  --c-primary-fixed-dim: #c6c6c6;
+  --c-secondary-fixed: #e4e2e2;
+  --c-secondary-fixed-dim: #c8c6c6;
+  --c-tertiary-fixed: #e2e2e2;
+  --c-tertiary-fixed-dim: #c6c6c6;
+
+  --c-on-primary-fixed: #1b1b1b;
+  --c-on-primary-fixed-variant: #474747;
+  --c-on-secondary-fixed: #1b1c1c;
+  --c-on-secondary-fixed-variant: #464747;
+  --c-on-tertiary-fixed: #1b1b1b;
+  --c-on-tertiary-fixed-variant: #474747;
+  --c-on-primary-container: #c6c6c6;
+  --c-on-tertiary-container: #c6c6c6;
+
+  --c-status-good: #6ad6a0;
+  --c-status-good-tint: #1a3a2a;
+  --c-status-data: #8ab8f0;
+  --c-status-data-tint: #1a2a3a;
+  --c-status-warn: #e0b860;
+  --c-status-warn-tint: #3a2e1a;
+  --c-status-alert: #f09080;
+  --c-status-alert-tint: #3a1a1a;
+  --c-live-indicator: #7FC79A;
+
+  --c-primary-tint: #2a2a2a;
+  --c-data-tint: #1a2a3a;
+  --c-good-tint: #1a3a2a;
+  --c-warn-tint: #3a2e1a;
+
+  --scrollbar-thumb: rgba(255,255,255,0.15);
+  --scrollbar-thumb-hover: rgba(255,255,255,0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Schibsted Grotesk', system-ui, sans-serif;
+  background-color: var(--c-background);
+  color: var(--c-on-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+input::placeholder {
+  color: #8A8A8A;
+}
+
+input:focus {
+  outline: none;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}

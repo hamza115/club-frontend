@@ -1,0 +1,74 @@
+/* Custom scrollbar — imported separately to bypass Tailwind purging */
+
+::-webkit-scrollbar,
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+div::-webkit-scrollbar,
+aside::-webkit-scrollbar,
+nav::-webkit-scrollbar,
+main::-webkit-scrollbar,
+section::-webkit-scrollbar,
+ul::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track,
+aside::-webkit-scrollbar-track,
+nav::-webkit-scrollbar-track,
+main::-webkit-scrollbar-track,
+section::-webkit-scrollbar-track,
+ul::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb,
+aside::-webkit-scrollbar-thumb,
+nav::-webkit-scrollbar-thumb,
+main::-webkit-scrollbar-thumb,
+section::-webkit-scrollbar-thumb,
+ul::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover,
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+div::-webkit-scrollbar-thumb:hover,
+aside::-webkit-scrollbar-thumb:hover,
+nav::-webkit-scrollbar-thumb:hover,
+main::-webkit-scrollbar-thumb:hover,
+section::-webkit-scrollbar-thumb:hover,
+ul::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.22);
+}
+
+::-webkit-scrollbar-button,
+html::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button,
+div::-webkit-scrollbar-button,
+aside::-webkit-scrollbar-button,
+nav::-webkit-scrollbar-button,
+main::-webkit-scrollbar-button,
+section::-webkit-scrollbar-button,
+ul::-webkit-scrollbar-button {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+html, body, div, aside, nav, main, section, ul {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.12) transparent;
+}
