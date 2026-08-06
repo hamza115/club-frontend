@@ -23,7 +23,7 @@ export function SocketProvider({ children }) {
     const token = localStorage.getItem('token');
     if (!token) return;
 
-    const socket = io({
+    const socket = io(import.meta.env.VITE_API_URL || undefined, {
       auth: { token },
       transports: ['websocket', 'polling'],
     });
